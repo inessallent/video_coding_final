@@ -5,6 +5,16 @@ import tempfile
 import shutil
 import uuid
 
+
+import os
+
+# Añadir la ruta de ffmpeg al PATH
+os.environ["PATH"] += os.pathsep + r'C:\ffmpeg\bin'
+
+# Verificar si Streamlit ahora puede usar ffmpeg
+os.system('ffmpeg -version')
+
+
 # Streamlit app title
 st.title("Video Coding")
 
