@@ -31,6 +31,7 @@ if processing_method == "Modify Resolution":
     
     if uploaded_file is not None:
         # Save the uploaded file to a temporary directory
+        temp_dir = tempfile.mkdtemp()
         input_file = os.path.join(temp_dir, uploaded_file.name)
 
         with open(input_file, "wb") as f:
@@ -76,6 +77,7 @@ if processing_method == "Modify Chroma Subsampling":
     
     if uploaded_file is not None:
         # Save the uploaded file to a temporary directory
+        temp_dir = tempfile.mkdtemp()
         input_file = os.path.join(temp_dir, uploaded_file.name)
 
         with open(input_file, "wb") as f:
@@ -115,6 +117,7 @@ if processing_method == "Get Video Information":
 
     if uploaded_file is not None:
         # Save the uploaded file to a temporary directory
+        temp_dir = tempfile.mkdtemp()
         input_file = os.path.join(temp_dir, uploaded_file.name)
 
         with open(input_file, "wb") as f:
@@ -158,6 +161,7 @@ if processing_method == "Package BBB Container":
 
     if uploaded_file is not None:
         # Save the uploaded file to a temporary directory
+        temp_dir = tempfile.mkdtemp()
         input_file = os.path.join(temp_dir, uploaded_file.name)
 
         with open(input_file, "wb") as f:
@@ -229,6 +233,7 @@ if processing_method == "Count Tracks in Video":
 
     if uploaded_file is not None:
         # Save the uploaded file to a temporary directory
+        temp_dir = tempfile.mkdtemp()
         input_file = os.path.join(temp_dir, uploaded_file.name)
 
         with open(input_file, "wb") as f:
@@ -268,6 +273,7 @@ if processing_method == "Generate Video with Macroblocks":
 
     if uploaded_file is not None:
         # Save the uploaded file to a temporary directory
+        temp_dir = tempfile.mkdtemp()
         input_file = os.path.join(temp_dir, "input.mp4")
 
         with open(input_file, "wb") as f:
@@ -316,6 +322,7 @@ if processing_method == "Generate Video with YUV Histogram":
 
     if uploaded_file is not None:
         # Save the uploaded file to a temporary directory
+        temp_dir = tempfile.mkdtemp()
         input_file = os.path.join(temp_dir, uploaded_file.name)
 
         with open(input_file, "wb") as f:
