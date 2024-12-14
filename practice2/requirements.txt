@@ -6,3 +6,6 @@ scipy
 pywavelets
 pytest
 ffmpeg-python 
+streamlit
+httpx
+python-multipart
